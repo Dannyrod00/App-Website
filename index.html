@@ -1,148 +1,101 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="img/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App Academy</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="jquery/jquery.js">
-    <link rel="author" href="humans.txt">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="icon" type="img/logo.png">
+<title>App Academy</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="CSS/style.css" rel="stylesheet" />
 </head>
-
 <body>
-
-    <header>
-         <nav>
-            <ul>
-                <li><a href="#">Company</a>
-                </li>
-                <li><a href="#">Services</a>
-                </li>
-                <li><a href="#">Social</a>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="button">
-                <a href="#">
-                    <img class="btn-open" src="btn-hamburger.png" alt="">
-                    <img class="btn-close" src="btn-close.png" alt="">
-                </a>
-            </div>
-        </nav>
-        
-    </header>
+<div id="page">
+	<div id="sidebar">
+		<div id="logo">
+			<h1><a href="#">App Academy</a></h1>
+		</div>
+		<!-- end header -->
+		<div id="menu">
+			<ul>
+				<li class="first"><a href="#">Computer Science</a></li>
+                <li><a href="#">Apply</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
+				
+			</ul>
+		</div>
+		<!-- end menu -->
+		<div id="login">
+			<h2 class="title1">Join The App Academy</h2>
+			<form id="form1" method="post" action="#">
+				<fieldset>
+				<label for="inputtext1">Username:</label>
+				<input id="inputtext1" type="text" name="inputtext1" value="" />
+				<label for="inputtext2">Password:</label>
+				<input id="inputtext2" type="password" name="inputtext2" value="" />
+				<input id="inputsubmit1" class="close" type="submit" name="inputsubmit1" value="done" />
+				<p><a href="#">Forgot your password?</a><br />
+					<a href="#">Register for Free!</a></p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- end sidebar -->
+	<div id="content">
+       <div><img src="img/bulldog.jpg" alt="" width="740" height="220" /></div>
     
-      <div class="overlay">
-        <div class="wrap">
-            <ul class="wrap-nav">
-                <li><a href="#">Company</a>
-                    <ul>
-                        <li><a href="#">About</a>
-                        </li>
-                        <li><a href="#">Blog</a>
-                        </li>
-                        <li><a href="#">Workplace</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Services</a>
-                    <ul>
-                        <li><a href="#">Web Design</a>
-                        </li>
-                        <li><a href="#">Consultanct</a>
-                        </li>
-                        <li><a href="#">Products</a>
-                        </li>
-                        <li><a href="#">Centers</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Social</a>
-                    <ul>
-                        <li><a href="#">Facebook</a>
-                        </li>
-                        <li><a href="#">Twitter</a>
-                        </li>
-                        <li><a href="#">Google Plus</a>
-                        </li>
-                        <li><a href="#">LinkedIn</a>
-                        </li>
-                        <li><a href="#">WhatsApp</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Contact</a>
-                    <ul>
-                        <li><a href="#">Address</a>
-                        </li>
-                        <li><a href="#">Phone</a>
-                        </li>
-                        <li><a href="#">Email</a>
-                        </li>
-                        <li><a href="#">Map</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="social">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, recusandae, magnam, sapiente, iure deleniti repudiandae est tempora repellat fugiat aliquid nihil assumenda non placeat cum minus aut qui. Ipsa, aut.
-            </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function () {
-            $('.btn-close').fadeOut(200);
-            var open = false;
-            $('.button a').on('click', function () {
-                if (open == false) {
-                    $('.overlay, .btn-close').fadeIn(200);
-                    $('nav ul li, .btn-open').fadeOut(200);
-                    open = true;
-                } else {
-                    $('.overlay, .btn-close').fadeOut(200)
-                    $('nav ul li, .btn-open').fadeIn(200);
-                    open = false;
-                }
-            });
-            $('.overlay').on('mouseup', function () {
-                $('.overlay, .btn-close').fadeOut(200);
-                $('nav ul li, .btn-open').fadeIn(200);
-                open = false;
-            });
-            $('.wrap').on('mouseup', function () {
-                return false;
-            });
-        })
-    </script>
-    
-    <div class="info">
-       <h1 id="headers">Overview</h1>
-        <a>
-        App Academy Computer Science courses are 100% project based, and follow the “flipped classroom” pedagogical model, where lessons are                 recorded and delivered through video format with companion written resources. The “flipped classroom” pedagogical model enables students to         learn new concepts and syntax at their own pace, and focus on project development by collaborating with their peers and under the guidance           of the instructor in the classroom.
-        </a>
+		<div class="boxed">
+            
+			<h1 class="title2">Welcome to Our Website!</h1>
         
-        <h2 id="headers">WEB APPLICATION DEVELOPMENT 1 & 2 </h2>
-        
-        <a>
-            Students begin with creating a three-page, responsive portfolio website to showcase their future projects. Students learn JavaScript               and PHP programming to add interactivity to their web applications and develop their own games. The progression of projects equips                 students with the skills necessary to succeed in continued academic study in university computer science programs and the professional             industry of software development alike. The Web Development two-year sequence culminates with the students building a series of object-             oriented, database driven web applications using skills acquired through previous projects.
-
-            <ul>
-                <li>
-                  <a>Languages: HTML, CSS, PHP, MySQL, and JavaScript</a>
-                </li>
-                <li>
-                   <a>Frameworks: Twitter Bootstrap, jQuery, melonJS</a>
-                </li>
-            </ul>
-        </a>
-        
-    </div>
-    
-      
+            <h3>Overview</h3>
+			<p>App Academy Computer Science courses are 100% project based, and follow the “flipped classroom” pedagogical model, where lessons are recorded and delivered through video format with companion written resources. The “flipped classroom” pedagogical model enables students to learn new concepts and syntax at their own pace, and focus on project development by collaborating with their peers and under the guidance of the instructor in the classroom. </p>
+			<h3>WEB APPLICATION DEVELOPMENT 1 & 2 (9TH AND 10TH GRADE)</h3>
+			<p>Students begin with creating a three-page, responsive portfolio website to showcase their future projects. Students learn JavaScript and PHP programming to add interactivity to their web applications and develop their own games. The progression of projects equips students with the skills necessary to succeed in continued academic study in university computer science programs and the professional industry of software development alike. The Web Development two-year sequence culminates with the students building a series of object-oriented, database driven web applications using skills acquired through previous projects.</p>
+			<h3>MOBILE APPLICATION DEVELOPMENT (11TH GRADE)</h3>
+            <p>Mobile Application Development provides a rigorous foundation of generalizable computer science concepts combined with programming techniques. By the end of this course, students will have a solid foundation of computer science concepts including algorithm design, object-oriented programming, advanced data structures and database design and integration, as well as a mastery of applying these concepts into complex, feature-rich software applications designed to run on the Android mobile OS.</p>
+            <h3>ADVANCED TOPICS IN COMPUTER SCIENCE (12TH GRADE)</h3>
+            <p>Students will apply advanced programming concepts to a number of different fields of applied computer science, including advanced web development, 3D game development and interconnection of embedded computing devices with internet technology ("Internet of Things"). Students will learn rigorous, advanced software engineering principles through a variety of different programming languages (ex. JavaScript, C#), further developing their ability to create custom software applications of high complexity.</p>
+            
+            <p>Students will design and develop their own Senior Capstone Project, either in groups or independently. The senior capstone project will be an application of the topics covered throughout the App Academy four‐year curriculum. Projects will be showcased on the students online portfolio and, if applicable, launched in a commercial mobile application store (i.e. Google Play Store).</p>
+            
+		</div>
+		<div class="boxed orange">
+			<div class="col-one">
+				<h2 class="title3">Lorem Ipsum Dolorem</h2>
+				<ul>
+					<li><a href="#">Semper vestibulum</a></li>
+					<li><a href="#">Vestibulum luctus</a></li>
+					<li><a href="#">Integer rutrum</a></li>
+					<li><a href="#">Etiam malesuada</a></li>
+					<li><a href="#">Elementum facilisis</a></li>
+					<li><a href="#">Ut tincidunt</a></li>
+					<li><a href="#">Odio sagittis</a></li>
+				</ul>
+			</div>
+			<div class="col-two">
+				<h2 class="title3">Lorem Ipsum Dolorem</h2>
+				<ul>
+					<li><a href="#">Semper vestibulum</a></li>
+					<li><a href="#">Vestibulum luctus</a></li>
+					<li><a href="#">Integer rutrum</a></li>
+					<li><a href="#">Etiam malesuada</a></li>
+					<li><a href="#">Elementum facilisis</a></li>
+					<li><a href="#">Ut tincidunt</a></li>
+					<li><a href="#">Odio sagittis</a></li>
+				</ul>
+			</div>
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<!-- end content -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<div id="footer">
+	<p id="legal">Copyright &copy; 2007 Travel Portal. All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	<p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+</div>
 </body>
-
 </html>
