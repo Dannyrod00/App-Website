@@ -10,7 +10,7 @@ body {
     background: #000;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 13px;
-    color: #666666;
+    color: #000;
     text-decoration: none;
     letter-spacing: .065em;
 }
@@ -251,79 +251,96 @@ a:hover {
     padding: 35px 0 0 20px;
 }
 
+
 /*CONTACT FORM*/
-        form {
-            /* Just to center the form on the page */
-            margin: 0 auto;
-            width: 400px;
-            /* To see the outline of the form */
-            padding: 1em;
-            border: 1px solid #000;
-            border-radius: 1em;
-        }
 
-        form div + div {
-            margin-top: 1em;
-        }
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #ee1d23;
+    border-radius: 1em;
+}
 
-        label {
-            /* To make sure that all labels have the same size and are properly aligned */
-            display: inline-block;
-            width: 20px 0 0 0;
-            height: auto;
-            text-align: right;
-        }
+form div + div {
+    margin-top: 1em;
+}
 
-        input, textarea {
-            /* To make sure that all text fields have the same font settings
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 20px 0 0 0;
+    height: auto;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
                By default, textareas have a monospace font */
-            font: 1em sans-serif;
+    font: 1em sans-serif;
+    /* To give the same size to all text field */
+    width: 20px 0 0 0;
+    height: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #ee1d23;
+    background-color: transparent;
+}
 
-            /* To give the same size to all text field */
-            width: 20px 0 0 0;
-            height: auto;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+input:focus,
+textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #fff;
+}
 
-            /* To harmonize the look & feel of text field border */
-            border: 1px solid #999;
-            
-            background-color: transparent;
-        }
-
-        input:focus, textarea:focus {
-            /* To give a little highlight on active elements */
-            border-color: #fff;
-        }
-
-        textarea {
-            /* To properly align multiline text fields with their labels */
-            vertical-align: top;
-
-            /* To give enough room to type some text */
-            height: 5em;
-
-            /* To allow users to resize any textarea vertically
+textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    /* To give enough room to type some text */
+    height: 5em;
+    /* To allow users to resize any textarea vertically
                It does not work on every browsers */
-            resize: vertical;
-        }
+    resize: vertical;
+}
 
-        .button {
-            /* To position the buttons to the same position of the text fields */
-            padding-left: 20px; /* same size as the label elements */
-        }
-        button {
-            /* This extra margin represent roughly the same space as the space
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 20px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
                between the labels and their text fields */
-            margin-left: .5em;
-        }
+    margin-left: .5em;
+}
 
-        .modal-body{
-/*         background-image: url(../landing%2520page/img/parralax.png);   */
-            background-color: #fff;
-            color: #000;
-        }
+.sendthing {
+    margin-top: 1em;
+}
 
-        .sendthing{
-         margin-top: 1em;   
-        }
+
+/*CUSTOM BUTTON*/
+.btn {
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    font-family: Georgia;
+    color: #000;
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border: solid #ee1d23 1px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: transparent;
+    text-decoration: none;
+    color: #ee1d23;
+    border-color: #000;
+}
