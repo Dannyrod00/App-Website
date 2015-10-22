@@ -12,7 +12,7 @@
     <link class="smooth-scroll">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#menu" data-offset="0">
     <div id="page">
         <div id="sidebar">
             <div id="logo">
@@ -21,17 +21,17 @@
             <!-- end header -->
             <div id="menu">
                 <ul>
-                    <li class="first"><a href="#">Computer Science</a></li>
-                    <li><a href="#">Apply</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="first"><a href="#cs">Computer Science</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </div>
             <!-- end menu -->
             <div id="login">
                 <h2 class="title1">Join The App Academy</h2>
-<!--
+                <!--
                 <form id="form1" method="post" action="#">
                     <fieldset>
                         <label for="inputtext1">Username:</label>
@@ -51,7 +51,7 @@
         <div id="content">
             <div><img src="img/bulldog.jpg" alt="" width="740" height="220" /></div>
 
-            <div class="boxed">
+            <div id="cs" class="boxed">
 
                 <h1 class="title2">Compooooooooter Science</h1>
 
@@ -66,95 +66,219 @@
 
                 <p>Students will design and develop their own Senior Capstone Project, either in groups or independently. The senior capstone project will be an application of the topics covered throughout the App Academy four‐year curriculum. Projects will be showcased on the students online portfolio and, if applicable, launched in a commercial mobile application store (i.e. Google Play Store).</p>
                 <blockquote>
-				<p>&ldquo;I almost did not procrastinate&rdquo;<br />
-                    -Danny Rodriguez(sophmore)</p>
-			</blockquote>
+                    <p>&ldquo;I almost did not procrastinate&rdquo;
+                        <br /> -Danny Rodriguez(sophmore)</p>
+                </blockquote>
 
             </div>
-            <div class="boxed">
-                     <h1 class="title2">Apply</h1>
+            <div id="apply" class="boxed">
+                <h1 class="title2">Apply</h1>
                 
+                <h3>ELIGIBILITY REQUIREMENTS</h3>
                 
-            
+                <p>Note: In order to be eligible to be admitted to the App Academy, students must have earned a cumulative middle school GPA of 2.0 (out of 4.0) or above.</p>
+                
+                <h3>CHECK YOUR HIGH SCHOOL ATTENDANCE ZONE</h3>
+                
+                <p>Before you apply, you need to check which high school attendance zone you are in</p>
+                
+                <ol>
+                    <li>
+                        <p> Check online at:<a href="http://www.apps.schoolsitelocator.com/index.html?districtCode=19475">School Site Locator website</a></p>
+                    </li>
+                    <li>
+                        <p>Call the PUSD Welcome Center at: (626) 396-3600 ext. 88430</p>
+                    </li>
+                </ol>
+                
+                <h3>PLEASE NOTE: THERE ARE TWO DIFFERENT PROCESSES FOR APPLYING, DEPENDING ON WHERE YOU LIVE!</h3>
+                
+                <ol>
+                    <li>
+                        <p>INSIDE THE PHS-ZONE: If you live inside the PHS Zone, you can apply directly to the App Academy by filling out the form below</p>
+                    </li>
+                    <li>
+                        <p>OUTSIDE THE PHS-ZONE: If you live outside of the PHS Zone, you must apply to the App Academy through PUSD Open Enrollment. The 2016-2017 Open Enrollment application process will begin in January 2016, right after the Winter Recess. More detailed information will be available at:<a href="http://www.pusd.us">http://www.pusd.us</a></p>
+                    </li>
+               </ol>
+
+                <h3>Become a programer</h3>
+
+                </form>
+
+                <form action="http://formspree.io/dannyrodriguez822@gmail.com" method="post">
+                    <div>
+                        <label for="text">Full Name:</label><br />
+                        <input type="text" name="flname">
+                    </div>
+                    <div>
+                        <label for="text">Current School:</label><br />
+                        <input type="text" name="sname">
+                    </div>
+                    <div>
+                        <label for="text">Student ID#:</label><br />
+                        <input type="text" name="id#">
+                    </div>
+                    <div>
+                        <h5  id="checkbox">What areas in programing are you interested in?</h5>
+                        
+                        <label  id="checkbox" for="checkbox">Website Programming:</label>
+                        <input id="checkbox"  type="checkbox" name="webp"><br />
+                        
+                        <label  id="checkbox"  for="checkbox">Video Game Programming:</label>
+                        <input id="checkbox"  type="checkbox" name="vgp"><br />
+                        
+                        <label  id="checkbox" for="checkbox">Social Game Programming (ex. Facebook games):</label>
+                        <input id="checkbox"  type="checkbox" name="sgp"><br />
+                        
+                        <label  id="checkbox" for="checkbox">Web Application Programming (ex. Facebook, Twitter):</label>
+                        <input id="checkbox"  type="checkbox" name="wap"><br />
+                        
+                        <label  id="checkbox" for="checkbox">Mobile Application Programming (ex. Android,ios apps):</label>
+                        <input id="checkbox"  type="checkbox" name="map"><br />
+                        </div>
+                            <div>
+                            <label for="msg">Motives to join:</label><br />
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                        <div>
+                            <label for="text">Address:</label><br />
+                            <input id="text" name="address"></input>
+                        </div>
+                        <div>
+                            <label for="text">City:</label><br />
+                            <input id="text" name="city"></input>
+                        </div>
+                        <div>
+                            <label for="text">Zip Code:</label><br />
+                            <input id="text" name="cityzip"></input>
+                        </div>
+                        <div>
+                            <label for="text">Home Phone:</label><br />
+                            <input id="text" name="hphone"></input>
+                        </div>
+                        <div>
+                            <label for="text">Cellphone of Guardian:</label><br />
+                            <input id="text" name="guardian#"></input>
+                        </div>
+                        <div>
+                            <label for="email">Guardians email:</label><br />
+                            <input type="email" name="_replyto">
+                        </div>
+                        <div>
+                            <h5>DISCLAIMER: By typing your name below, you understand that your son/daughter must meet the minimum entrance requirements in order to be eligible for admission to the App Academy, that space is limited, and that submission of this application does not guarantee that my child will be enrolled in the program. </h5>
+                            
+                            <input id="text" name="user_message"></input>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                </form>
+
+                <blockquote>
+                    <p>&ldquo;WAIT!!!the project is due today&rdquo;
+                        <br /> -Andy West(sophmore)</p>
+                </blockquote>
+
             </div>
-            <div class="boxed">
+            <div id="FAQs" class="boxed">
                 <h1 class="title2">FAQs</h1>
-                   <h4>DO I NEED A LAPTOP TO PARTICIPATE IN THE APP ACADEMY?</h4>
-                     <p>No, we provide you one! Every student in the App Academy is loaned a laptop to use while they are students in the App Academy. This laptop is yours to use 24/7 during the academic year, subject to certain terms and conditions. We request that each student use the laptop provided by The App Academy to make full use of the provided software packages and technical maintenance.</p>  
-                
+                <h4>DO I NEED A LAPTOP TO PARTICIPATE IN THE APP ACADEMY?</h4>
+                <p>No, we provide you one! Every student in the App Academy is loaned a laptop to use while they are students in the App Academy. This laptop is yours to use 24/7 during the academic year, subject to certain terms and conditions. We request that each student use the laptop provided by The App Academy to make full use of the provided software packages and technical maintenance.</p>
+
                 <h4>DO I NEED PREVIOUS PROGRAMMING EXPERIENCE TO JOIN THE APP ACADEMY IN 9TH GRADE?</h4>
                 <p>Absolutely not! ANY incoming 9th grade student who meets entrance requirements and is interested in learning more about computer science is encouraged to apply to the App Academy.</p>
-                
+
                 <h4>WHAT TYPES OF EXPERIENCES CAN I EXPECT TO HAVE AS AN APP ACADEMY STUDENT?</h4>
-               <p>Students are exposed to the exciting world of cutting-edge software development work in a variety of ways, including in-class guest speakers from tech start-ups, real-world software development projects infused into the classes, HACKATHONS, and more!</p>
-                
+                <p>Students are exposed to the exciting world of cutting-edge software development work in a variety of ways, including in-class guest speakers from tech start-ups, real-world software development projects infused into the classes, HACKATHONS, and more!</p>
+
                 <h4>HOW DOES THE APP ACADEMY PREPARE STUDENTS FOR SUCCESS IN COLLEGE AND FUTURE CAREER?</h4>
-                 <p>The computer science curriculum is being developed from scratch to be state-of-the-art in high school computer science education. Skills developed include those required by top companies including Google, Microsoft, Yahoo, and Facebook. Projects include building a project portfolio, an online store, a blog engine, JavaScript and Android games, and a variety of Android mobile applications. The App Academy teaches students 21st Century Skills including the four C’s of critical thinking and problem solving, communication, collaboration, and creativity and innovation, and will enable them to have the self-belief to succeed in future academic and professional aspirations in any field.</p>
-                
+                <p>The computer science curriculum is being developed from scratch to be state-of-the-art in high school computer science education. Skills developed include those required by top companies including Google, Microsoft, Yahoo, and Facebook. Projects include building a project portfolio, an online store, a blog engine, JavaScript and Android games, and a variety of Android mobile applications. The App Academy teaches students 21st Century Skills including the four C’s of critical thinking and problem solving, communication, collaboration, and creativity and innovation, and will enable them to have the self-belief to succeed in future academic and professional aspirations in any field.</p>
+
                 <h4>IS THE APP ACADEMY AN AFTER SCHOOL/EXTRACURRICULAR PROGRAM?</h4>
-                   <p>No, the App Academy is an academic program offered during the school day at Pasadena High School. To be a part of the App Academy, students must be in the PHS attendance zone or must apply for a permit to attend PHS through Open Enrollment.</p>
-                
+                <p>No, the App Academy is an academic program offered during the school day at Pasadena High School. To be a part of the App Academy, students must be in the PHS attendance zone or must apply for a permit to attend PHS through Open Enrollment.</p>
+
                 <h4>CAN I BE IN BAND, JROTC, OR TAKE AP CLASSES WHILE IN THE APP ACADEMY?</h4>
-                   <p>Yes, you can! In fact, several of our current students actively participate in extracurricular activities and AP courses. The school counselors do their best to accommodate schedules according to each individual student’s needs.</p>
-                
+                <p>Yes, you can! In fact, several of our current students actively participate in extracurricular activities and AP courses. The school counselors do their best to accommodate schedules according to each individual student’s needs.</p>
+
                 <h4>DOES IT COST ANYTHING TO JOIN THE APP ACADEMY?</h4>
-                  <p>No, it is completely free for students to join.</p>
-                
+                <p>No, it is completely free for students to join.</p>
+
                 <h4>AWESOME!! SO, HOW CAN I JOIN THE APP ACADEMY?</h4>
-                  <p>Check out our application information, available here.</p>
-                
+                <p>Check out our application information, available here.</p>
+
+                <blockquote>
+                    <p>&ldquo;When life gives you lemons make orange juice so life is like WHAT!!!&rdquo;
+                        <br /> -Renan Gonzales-Sainz(sophmore)</p>
+                </blockquote>
+
             </div>
-            <div class="boxed">
+            <div id="contact" class="boxed">
                 <h1 class="title2">Contact Us</h1>
+
+                <h3>Have any questions?</h3>
                 
-                <h3>Got any questions?</h3>
-         </form>
-          
-          <form action="http://formspree.io/dannyrodriguez822@gmail.com" method="post">
-              <div>
-                  <label for="text">Name:</label>
-                  <input type="text" name="name">
-              </div>
-              <div>
-                  <label for="email">email:</label>
-                  <input type="email" name="_replyto">
-              </div>
-              <div>
-                  <label for="msg">message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-              </div>
-              <div class="button">
-                  <button type="submit" class="btn btn-primary">Send your message</button>
-              </div>
-              
-          </form>
-            
-              <h5>or Call us at </h5>          
-                
+                </form>
+
+                <form action="http://formspree.io/dannyrodriguez822@gmail.com" method="post">
+                    <div>
+                        <label for="text">Name:</label><br />
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label for="email">email:</label><br />
+                        <input type="email" name="_replyto">
+                    </div>
+                    <div>
+                        <label for="msg">message:</label><br />
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Send your message</button>
+                    </div>
+
+                </form>
+
+                <h5>or Call us at (626) 396-3600 ext. 88520</h5>
+
             </div>
             <div class="boxed orange">
                 <div class="col-one">
-                    <h2 class="title3">Student Projects</h2>
+                    <h2 class="title3">Student Websites</h2>
                     <ul>
-                        <li><a href="http://dannyrod00.github.io">Semper vestibulum</a></li>
-                        <li><a href="#">Vestibulum luctus</a></li>
-                        <li><a href="#">Integer rutrum</a></li>
-                        <li><a href="#">Etiam malesuada</a></li>
-                        <li><a href="#">Elementum facilisis</a></li>
-                        <li><a href="#">Ut tincidunt</a></li>
-                        <li><a href="#">Odio sagittis</a></li>
+                        <li>
+                            <a class="img" href="http://dannyrod00.github.io">
+                               <img src="s-work/student-work-8.PNG">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img" href="s-work/student-work-05.PNG">
+                               <img src="s-work/student-work-05.PNG">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img" href="s-work/student-work-06.PNG">
+                               <img src="s-work/student-work-06.PNG">
+                            </a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="col-two">
-                    <h2 class="title3">Lorem Ipsum Dolorem</h2>
+                    <h2 class="title3">Student Games</h2>
                     <ul>
-                        <li><a href="#">Semper vestibulum</a></li>
-                        <li><a href="#">Vestibulum luctus</a></li>
-                        <li><a href="#">Integer rutrum</a></li>
-                        <li><a href="#">Etiam malesuada</a></li>
-                        <li><a href="#">Elementum facilisis</a></li>
-                        <li><a href="#">Ut tincidunt</a></li>
-                        <li><a href="#">Odio sagittis</a></li>
+                        <li>
+                            <a class="img" href="s-work/student-work-10.png">
+                               <img src="s-work/student-work-10.PNG">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img" href="s-work/student-work-20.png">
+                               <img src="s-work/student-work-20.PNG">
+                            </a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
@@ -165,10 +289,11 @@
     </div>
     <!-- end page -->
     <div id="footer">
-        <p id="legal">Copyright &copy; 2007 Travel Portal. All Rights Reserved. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
-        
+        <p id="legal">Copyright &copy; 2000 Travel Portal. All Rights Reserved. Designed by <a href="http://dannyrod00.github.io">D-Rod</a></p>
+
     </div>
-        
+
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </body>
 

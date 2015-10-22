@@ -4,6 +4,7 @@ http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
 
+@import url(http://twitter.github.com/bootstrap/assets/css/bootstrap.css);
 body {
     margin: 0;
     padding: 0;
@@ -13,6 +14,8 @@ body {
     color: #000;
     text-decoration: none;
     letter-spacing: .065em;
+    height: 100%;
+    position: relative;
 }
 
 blockquote {
@@ -20,17 +23,24 @@ blockquote {
 }
 
 a {
-    color: #135293;
+    color: #ee1d23;
 }
 
 a:hover {
-    text-decoration: none;
+    color: #666666
 }
+
+ .img:hover{
+        -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.7);
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.7);   
+     }
+
 
 .title1 {
     margin: 0;
     padding: 10px 0;
-    background: url('../images/img07.gif') repeat-x left bottom;
+    background: url('../images/img07.png') repeat-x left bottom;
     font-weight: normal;
     font-size: 129%;
     color: #FFFFFF;
@@ -90,7 +100,7 @@ a:hover {
 #page {
     width: 980px;
     margin: 0 auto;
-    background: #FFFFFF url('../images/img01.gif') repeat-y;
+    background: #FFFFFF url('../images/img01.png') repeat-y;
 }
 
 
@@ -325,7 +335,9 @@ button {
 
 
 /*CUSTOM BUTTON*/
+
 .btn {
+    align-items: center;
     -webkit-border-radius: 13;
     -moz-border-radius: 13;
     border-radius: 13px;
@@ -343,4 +355,8 @@ button {
     text-decoration: none;
     color: #ee1d23;
     border-color: #000;
+}
+
+#checkbox{
+    float: left;
 }
